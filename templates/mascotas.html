@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas en adopción</title>
+</head>
+
+<body>
+
+    <h1>Mascotas en adopción</h1>
+
+    {% for mascota in mascotas %}
+
+        <div>
+            <h2>{{ mascota.nombre }}</h2>
+
+            <p>Especie: {{ mascota.especie }}</p>
+            <p>Sexo: {{ mascota.sexo }}</p>
+            <p>Edad: {{ mascota.edad_aproximada }}</p>
+            <p>Tamaño: {{ mascota.tamano }}</p>
+            <p>Ubicación: {{ mascota.ubicacion_general }}</p>
+            <p>Historia: {{ mascota.historia }}</p>
+
+        </div>
+
+        <hr>
+
+    {% endfor %}
+
+</body>
+</html>
